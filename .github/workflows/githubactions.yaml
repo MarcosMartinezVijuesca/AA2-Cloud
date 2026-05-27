@@ -31,4 +31,4 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          kubectl set image deployment/temperaturas-frontend temperaturas-frontend=TUUSUARIODOCKERHUB/temperaturas-frontend:${{ github.sha }}
+          kubectl set image deployment/temperaturas-frontend frontend=marcosmartinez10/temperaturas-frontend:${{ github.sha }}
